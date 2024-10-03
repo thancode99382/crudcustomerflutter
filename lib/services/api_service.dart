@@ -11,7 +11,7 @@ class ApiService {
       List jsonResponse = json.decode(response.body);
       return jsonResponse.map((customer) => Customer.fromJson(customer)).toList();
     } else {
-      throw Exception("failed fetch from data  ");
+      throw Exception("failed from data  ");
     }
   }
 
